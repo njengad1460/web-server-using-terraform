@@ -41,9 +41,4 @@ Apply the changes:
 Bash
 terraform apply
 Usage
-Once the deployment is complete, you can access the server via SSH:
-
-Bash
-ssh -i "your-key.pem" ec2-user@<public-ip-address>
-Security Note
-The current configuration allows SSH access from any IP (0.0.0.0/0). For production environments, it is recommended to restrict this to your specific IP address.
+Once the deployment is complete, you can access the server via SSH
