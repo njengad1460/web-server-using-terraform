@@ -66,3 +66,8 @@ resource "aws_instance" "web_server" {
     Name = "WebServer-CustomSubnet"
   }
 }
+
+# Outputs the Public IP the terminal after terraform appy
+output "web_public_ip" {
+  value = aws_instance.web_server.public_ip
+}
